@@ -4,15 +4,15 @@
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<link rel="canonical" href="https://stratpack.blog/2021/08/28/transport-fever-2-broken-shipping-line/" />
+	<link rel="canonical" href="https://stratpack.blog/2022/01/15/defence-of-scripting-football-games" />
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Transport Fever 2&colon; How to fix a broken shipping line | The Strat Pack" />
+	<meta property="og:title" content="In defence of scripting in football games | The Strat Pack" />
 	<meta property="og:description" content="" />
-	<meta property="og:url" content="https://stratpack.blog/2021/08/28/transport-fever-2-broken-shipping-line/" />
+	<meta property="og:url" content="https://stratpack.blog/2022/01/15/defence-of-scripting-football-games" />
 	<meta property="og:site_name" content="The Strat Pack" />
 	<meta property="article:published_time" content="" />
-	<meta property="og:image" content="https://stratpack.blog/wp-content/uploads/2021/08/tf2_shipping_3.png" />
+	<meta property="og:image" content="https://stratpack.blog/wp-content/uploads/2022/01/scripting_0.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:creator" content="@thestratpack" />
 	<meta name="twitter:site" content="@thestratpack" />
@@ -23,7 +23,7 @@
 				display: none;
 			}
 		</style>
-		<title>Transport Fever 2&colon; How to fix a broken shipping line | The Strat Pack | Strategy and simulation gaming and adjacent interests</title>
+		<title>In defence of scripting in football games | The Strat Pack | Strategy and simulation gaming and adjacent interests</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="/assets/images/favicon.png">
 		<link rel="stylesheet" href="/assets/css/styles.css">
@@ -71,57 +71,68 @@
 		
 		<div id="tags">
 			
-					<a class="post tag" href="/tag/transport-fever">transport fever</a>
+					<a class="post tag" href="/tag/fifa">fifa</a>
 			
-					<a class="post tag" href="/tag/management">management</a>
+					<a class="post tag" href="/tag/pes">pes</a>
+			
+					<a class="post tag" href="/tag/football">football</a>
+			
+					<a class="post tag" href="/tag/game-design">game design</a>
 			
 		</div>
 		
 		<div class="title">
-			<h1 class="entry-title">Transport Fever 2&colon; How to fix a broken shipping line</h1>
+			<h1 class="entry-title">In defence of scripting in football games</h1>
 		</div>
 		
 		<div class="meta">
-			<span class="year_label">2021-08-28</span>&nbsp; 
+			<span class="year_label">2022-01-15</span>&nbsp; 
 				
 				
-					<a href="/category/guides-and-tips.html" class="category">Guides and tips</a>
+					<a href="/category/news-and-opinion.html" class="category">News and opinion</a>
 				
 		</div>
 		
-		<p>If you’ve read <a href="/2021/08/30/transport-fever-2-review">my review of <em>Transport Fever 2</em></a>, you’ll know that one of the most frustrating parts of the game is when there’s a problem but it doesn’t tell you what’s wrong or how to fix it. And none of these is more frustrating than when you find yourself unable to assign a ship to a new sea line.</p>
+		<p>Spend any length of time reading online forums for football games and you’ll come across complaints about “scripting” - the alleged way games like <em>FIFA</em> and <em>PES</em> artificially infuence games to create drama. This quirk of games’ design and programming is always portrayed in a negative light, and often rightly so, but I’d like to make a case for why it makes sense and improves the gameplay experience in certain circumstances.</p>
 
-<p>Chances are if you’ve stumbled across this article, you’ve been presented with the an error when trying to put the infrastructure in place to transport passengers or cargo across water. The messages vary, but will usually say something like this:</p>
+<p><img src="/wp-content/uploads/2022/01/scripting_0.png" /></p>
 
-<p><img src="/wp-content/uploads/2021/08/tf2_shipping_1.png" /></p>
+<h3 id="what-is-scripting">What is scripting?</h3>
 
-<blockquote>
-  <p>“Unable to find path to stop (no path for big ships). A path has been found, but only small ships are allowed on this path. Consider using small ships or large docks.”</p>
-</blockquote>
+<p>According to the critics, “scripting” - sometimes also referred to as “momentum” - is a perversion of the way football games should play. Unlike real football, <em>FIFA</em> matches are under the complete control of a match engine, and by extension, the developers. And there have been accusations for years that EA Sports (and Konami, before <a href="/2021/10/01/efootball-2022-first-impressions"><em>eFootball</em> killed the <em>PES</em> series</a>) has abused this power to create as much drama as possible.</p>
 
-<p>This caused a fair bit of confusion when I first encountered it. What was this mysterious issue? Over time, I’ve found that this error can be caused by any of the following factors…</p>
+<p>To those who are on the lookout for potential foul play, this invisible hand makes itself known in semi-predictable ways, usually to give teams suffering heavy losses a fighting chance or to prevent the player team from running away with every match, or the league title. Some of the most common complaints allege that scripting:</p>
 
-<h3 id="the-waters-are-not-navigable">The waters are not navigable</h3>
+<ul>
+  <li>Makes goals easier for both teams to score in the final minutes</li>
+  <li>Causes shots to hit the post, passes to go off course, etc. when the game doesn’t “want” the player to win the game</li>
+  <li>Grants even the weakest opponents - and in particular goalkeepers - superstar skills if the game favours them in the match</li>
+  <li>Ensures Career Mode rivals win the player wins, draws when the player draws, etc. to keep the title race as close as possible</li>
+</ul>
 
-<p>Sometimes the solution can be as simple as checking that the water along your route is deep enough for the ship to travel through. That said, despite my initial suspicions, I don’t think this will often be the issue. After some testing, is appears that the game considers any depth at all navigable, even if I create an artifical, jagged seabed sits just below the surface.</p>
+<p>Many players say the biggest giveaway that scripting has taken effect is when one team has far more possession and shots on goal but fails to win. This has become something of a meme, particularly in <a href="/2019/01/25/football-manager-addictive-spreadsheet/">the stats-obsessed world of <em>Football Manager</em></a>, and was probably at least partly responsible for the emergence of the expected goals (xG) metric in the real game.<!--more--></p>
 
-<p>The easiest way to double-check is to use the Navigable Waters layer. Click the layers button in the top left and choose the icon that looks like waves. The game will colour all water that ships can travel through green, and this will help you to identify any trouble spots.</p>
+<p><img src="/wp-content/uploads/2022/01/scripting_1.png" /></p>
 
-<h3 id="theres-a-bridge-in-the-way">There’s a bridge in the way</h3>
+<p>Some of this may be coincidence, of course, and the big teams do suffer these frustrating matches in the Premier League and beyond. EA has denied that it scripting exists in <em>FIFA</em> (as far as I know, Konami has never spoken on the issue), so it could be that what is observed is not the result of an algorithm designed to control the outcome of matches, and instead a culmunation of all the systems that simulate form, fatigue, skills, and so on.</p>
 
-<p>Low road and rail bridges can also present an obstruction to ships. Again, the easiest way to check this is by using the Navigable Waters layer. If your bridge has a blue area around it, you’ll need to demolish it and reconstruct it at a greater height in order to allow ships to pass underneath.</p>
+<p>But the frequency of these events has convinced some players that scripting exists. What would be the developers’ motive to implement it, you might ask? The purported answer is that the added drama makes the game more emotional and therefore more addictive, as well as encouraging less skilled players by ensuring they always have a chance at securing a freak win.</p>
 
-<p><img src="/wp-content/uploads/2021/08/tf2_shipping_2.png" /></p>
+<p>Nobody except the developers knows whether scripting really exists in any given game, or to what level it influences matches, but I’ve seen enough evidence in my own play to suspect it’s there in some form. The assumption I’m never sure about, however, is that a “pure” football game would play better. The scripting rumours have persisted in one form or another since the mid-2000s, and there have been <a href="/2021/01/16/pro-evolution-soccer-5-master-league">some great football games</a> in that time. So when does it work and when does it not?</p>
 
-<h3 id="theres-no-suitable-dock">There’s no suitable dock</h3>
+<h3 id="when-scripting-works">When scripting works</h3>
 
-<p>The final reason why your route might be failing, and the one that caught me out first time round, is if you don’t have suitable docks at your ports for your ship to arrive and depart from. Ships come in two flavours in <em>Transport Fever 2</em> - large and small - and there are docks to match.</p>
+<p>First, I will concede that scripting would be very frustrating in online game modes, where you usually only play each opponent once and therefore don’t have a chance for the luck to level out. It would also affect online rankings, promotion and relegation from divisions, and so on. It would be even worse if it spanned to modes where money is involved, but we have at least had <a href="https://www.eurogamer.net/articles/2021-03-03-fifa-scripting-lawsuit-withdrawn-after-ea-provides-plaintiffs-with-detailed-technical-information-and-access-to-speak-with-our-engineers" target="_blank">confirmation from EA that there is no scripting in Ultimate Team</a>.</p>
 
-<p>To add a large dock for your large ship, click on the port, choose Configure, and select the large dock under either Passenger or Cargo. Place the dock, and then switch to the Landing tab and add the appropriate landing next to the dock. This should look something like the image below.</p>
+<p>But offline, I believe it can actually create a more enjoyable experience. This is certainly <em>not</em> the case my Chelsea side visit Burnley and lose to two wonder goals, but it can certainly liven up games against weaker teams. Statistically you’d expect the big club to pervail comfortably, but that’s not always the case in real life and constant 3-0 wins would get boring.</p>
 
-<p><img src="/wp-content/uploads/2021/08/tf2_shipping_3.png" /></p>
+<p><img src="/wp-content/uploads/2022/01/scripting_2.png" /></p>
 
-<p>Finally, make sure that your line is now using the correct landing. Open the Line Manager, look at the relevant port’s entry in the route, and click on the waves with the dock number next to them. Use the dropdown to select your new large dock and youi should be good to go!</p>
+<p>Some of my best <em>FIFA</em> games have been those where everything seems to be going the opposition’s way. When I play Southampton at home and they park the bus I can spend nearly the whole game trying to pick apart the AI’s defence, their goalkeeper performing all kinds of acrobatics when I get the odd shot away. When a chance falls to my striker with two minutes to go I expect him to miss because he’s barely been able to control the ball for 88 minutes, but when the ball hits the back of the net and secures the 1-0 win, that hard-fought triumph is one of the best feelings in the game.</p>
+
+<p>The “scripting” - or at least the randomised part of the game that leads people to <em>believe</em> there is scripting - leads to added challenge and interesting stories in games that might have been nothing but boring domination. This reflects real life matches, when big teams have off days against bottom-of-the-table sides using very defensive setups, and really adds tension to the in-game title battle when I know City and Liverpool are winning.</p>
+
+<p>In short, scripting or not, unpredictability is what makes football the world’s favourite sport and what makes football games worth playing.</p>
 
 		
 		<div id="cta">
@@ -131,13 +142,11 @@
 		<div id="prev_next">
 			<div class="prev">
 				    
-						<a href="/2021/08/27/motorsport-manager-review">&laquo;&nbsp;Motorsport Manager review</a>
+						<a href="/2022/01/08/fifa-new-years-resolution">&laquo;&nbsp;FIFA is my new year's resolution &#40;kind of&#41;</a>
 					
 			</div>
 			<div class="next">
 				    
-						<a href="/2021/08/29/btcc-formula-4-thruxton/">Visiting Thruxton for BTCC and Formula 4&nbsp;&raquo;</a>
-					
 			</div>
 		</div>
 		
