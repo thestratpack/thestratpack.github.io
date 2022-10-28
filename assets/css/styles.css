@@ -3,6 +3,10 @@ html {
 	overflow-y: scroll;
 }
 
+img {
+	border-radius: 5px;
+}
+
 #home_content_boxes {
 	display: none !important;
 }
@@ -37,10 +41,10 @@ body {
 #header {
 	float: left;
 	width: 100%;
-	padding: 15px 0 10px;
+	padding: 10px 0 10px;
 	border-bottom: 1px solid #ddd;
-	background: #333;
 	background-image: url("/assets/images/header_background.png");
+	background-size: 100% 100%;
 	color: white;
 	text-shadow: 1px 1px #333;
 }
@@ -68,6 +72,17 @@ body {
 #header_right {
 	float: right;
 	padding-top: 9px;
+}
+
+#header_right img {
+	width: 35px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+#header_right img:hover {
+	opacity: 0.8;
 }
 
 .link_icon_twitter {
@@ -283,6 +298,58 @@ body {
 .blog_entry img {
 	width: 340px;
 	height: 191.25px;
+}
+
+#cta_socials {
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+	color: #fff;
+	background: #8A0886;
+}
+
+h3.cta_header {
+	font-size: 14pt !important;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#cta_socials a {
+	color: #fff;
+}
+
+.cta_social {
+	float: left;
+	width: 33%;
+	justify-content: center;
+	border-radius: 3px;
+	border-left: 1px solid #ddd;
+}
+
+.cta_social:hover {
+	opacity: 0.8;
+}
+
+.cta_social img {
+	width: 35px;
+	height: 35px;
+	margin: 10px auto 5px;
+	display: block;
+}
+
+.cta_img {
+	float: left;
+	display: flex;
+	width: 100%;
+}
+
+.cta_text {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 2px 0 10px;
 }
 
 #home_sidebar .blog_entry img {
@@ -726,7 +793,7 @@ nav a:first-of-type {
 }
 
 #menu_2 {
-	background: #FF9900;
+	background: #333;
 }
 
 #menu ul, #menu ul li, #menu_2 ul, #menu_2 ul li {
@@ -745,8 +812,8 @@ nav a:first-of-type {
 }
 
 #menu ul li:hover, #menu ul li a:hover, #menu_2 ul li:hover, #menu_2 ul li a:hover {
-	color: #8A0886 !important;
-	background: #FF9900 !important;
+	color: #333 !important;
+	background: #ddd !important;
 }
 
 #post_directory_entry {
@@ -861,6 +928,10 @@ a.tag:hover {
 	
 	#header, #menu {
 		width: 107% !important;
+	}
+
+	#menu {
+		background:  #333 !important;
 	}
 	
 	#social {
