@@ -26,14 +26,14 @@ img {
 body {
 	color: #333;
 	font-family: Verdana, sans-serif;
-	font-size: 10pt;
-	line-height: 1.4em;
+	font-size: 12pt;
+	line-height: 1.5em;
 	margin: 0;
 	background: #eee;
 }
 
 #site-container {
-	max-width: 750px;
+	max-width: 950px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -41,7 +41,7 @@ body {
 #header {
 	float: left;
 	width: 100%;
-	padding: 10px 0 10px;
+	padding: 20px 0 15px;
 	border-bottom: 1px solid #ddd;
 	background-image: url("/assets/images/header_background.png");
 	background-size: 100% 100%;
@@ -50,7 +50,8 @@ body {
 }
 
 #header_left {
-	width: 530px;
+	width: 730px;
+	padding-left: 15px;
 }
 
 #header_left h2 {
@@ -72,6 +73,7 @@ body {
 #header_right {
 	float: right;
 	padding-top: 9px;
+	padding-right: 15px;
 }
 
 #header_right img {
@@ -100,12 +102,12 @@ body {
 }
 
 .site_logo {
-	width: 60px;
-	height: 60px;
+	width: 75px;
+	height: 75px;
 	float: left;
-	padding-top: 1px;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin-top: -7px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .header_banner {
@@ -161,6 +163,10 @@ body {
 }
 
 @media screen and (max-width: 779px) {
+
+	body {
+		background: #fff !important;
+	}
 
     .home_box {
 		float: left !important;
@@ -220,8 +226,7 @@ body {
 	
 	#home_main {
 		width: 100% !important;
-		padding-bottom: 20px !important;
-		padding-right: 0 !important;
+		padding: 20px 0 !important;
 	}
 	
 	#home_sidebar, #cta {
@@ -295,6 +300,12 @@ body {
 	color: #fff;
 }
 
+#home_posts_list.home_bottom {
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+	width: 900px !important;
+}
+
 .blog_entry img {
 	width: 340px;
 	height: 191.25px;
@@ -314,6 +325,7 @@ h3.cta_header {
 	font-size: 14pt !important;
 	padding-bottom: 5px;
 	text-align: center;
+	padding-top: 45px;
 }
 
 #cta_socials a {
@@ -326,6 +338,8 @@ h3.cta_header {
 	justify-content: center;
 	border-radius: 3px;
 	border-left: 1px solid #ddd;
+	background-image: url('/assets/images/header_background.png');
+	background-position: center top;
 }
 
 .cta_social:hover {
@@ -416,8 +430,9 @@ h3.cta_header {
 }
 
 #home_sidebar .big_title {
-	font-size: 10pt;
-	margin-bottom: 15px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+	font-weight: normal;
 }
 
 .home_box ul {
@@ -448,8 +463,15 @@ h3.cta_header {
 .year_label {
 	float: left;
 	font-weight: bold;
-	padding-right: 5px;
+	padding-right: 10px;
+	padding-top: 1px;
 	color: #8A0886;
+	font-size: 11pt;
+	line-height: 1.5em;
+}
+
+#home_sidebar .year_label{
+	padding-right: 0 !important;
 }
 
 #home_posts_list .blog_entry_date {
@@ -460,6 +482,11 @@ h3.cta_header {
 #home_posts_list .blog_entry_title {
 	float: left;
 	width: 85%;
+}
+
+.cat_tag_page .blog_entry_title {
+	font-size: 12pt !important;
+	padding-top: 5px !important;
 }
 
 .blog_entry, .blog_entry_date, .blog_entry_title {
@@ -478,16 +505,16 @@ h3.cta_header {
 #home_posts_list {
 	width: 100%;
 	float: left;
-	padding: 10px 0 20px;
+	padding: 0 0px 25px;
 }
 
 #prev_next {
 	float: left;
 	width: 100%;
-	margin-top: 25px;
+	margin-top: 35px;
 	font-weight: normal;
 	font-style: italic;
-	font-size: 10pt;
+	font-size: 11pt;
 }
 
 .prev {
@@ -505,9 +532,9 @@ h3.cta_header {
 
 #footer {
 	float: left;
-	width: 100%;
+	width: 900px;
 	border-top: 1px solid #ddd;
-	padding: 10px 0;
+	padding: 20px 25px;
 	margin: 0 0 30px;
 }
 
@@ -516,7 +543,7 @@ h3.cta_header {
 }
 
 .home #footer {
-	padding-top: 10px;
+	padding-top: 20px;
 	margin-top: 0px;
 }
 
@@ -562,7 +589,7 @@ a {
 h1 {
 	float: left;
 	line-height: 1.2em;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	width: 100%;
 	letter-spacing: -0.05em;
 }
@@ -581,6 +608,7 @@ h2 {
 #header h2 {
 	color: white;
 	letter-spacing: -0.05em;
+	margin-top: 5px;
 }
 
 h3 {
@@ -594,21 +622,22 @@ h3 {
 #header h3 {
 	padding: 0 !important;
 	margin-bottom: 5px !important;
-	text-transform: uppercase;
-	font-size: 10pt;
+	font-size: 12pt;
 	width: auto !important;
+	font-weight: normal;
 }
 
 p {
 	float: left;
 	width: 100%;
-	padding: 20px 0 0;
+	padding: 25px 0 0;
 	margin: 0;
 }
 
 .post p, #home_main p {
-	font-size: 10pt;
-	line-height: 1.4em;
+	font-size: 13pt;
+	line-height: 1.5em;
+	font-family: Helvetica, sans-serif;
 }
 
 .post h3, #home_main h3 {
@@ -618,19 +647,19 @@ p {
 
 .post h4, #home_main h4 {
 	float: left;
-	font-size: 10pt;
+	font-size: 12pt;
 	line-height: 1.4em;
-	padding: 20px 0 0 0;
+	padding: 30px 0 0 0;
 	margin: 0;
 }
 
 .post ol, .post ul,#home_main ol, #home_main ul {
 	float: left;
-	margin: 30px 0 -5px;
+	margin: 35px 0 -5px;
 	padding: 0 0 0 5%;
-	font-size: 10pt;
-	line-height: 1.4em;
-	width: 95%;
+	font-size: 12pt;
+	line-height: 1.5em;
+	width: 90%;
 }
 
 .post ol p, .post ul p, #home_main ol p, #home_main ul p {
@@ -663,6 +692,12 @@ p {
 	padding-bottom: 15px;
 	padding-left: 10px;
 	width: 100%;
+}
+
+.post #home_main li {
+	font-family: Helvetica, sans-serif;
+	font-size: 13pt;
+	line-height: 1.5em;
 }
 
 blockquote, .highlight {
@@ -702,7 +737,7 @@ blockquote p:first-of-type {
 .meta {
 	float: left;
 	text-transform: uppercase;
-	font-size: 10pt;
+	font-size: 11pt;
 }
 
 .meta a {
@@ -711,7 +746,7 @@ blockquote p:first-of-type {
 }
 
 ::selection {
-	background: #FF9900;
+	background: #8A0886;
 	color: white;
 }
 
@@ -748,9 +783,10 @@ blockquote p:first-of-type {
 
 #fourohfour {
 	float: left;
-	width: 100%;
-	border-bottom: 1px solid #ddd;
+	width: 900px;
 	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 #fourohfour p {
@@ -789,17 +825,20 @@ nav a:first-of-type {
 #menu, #menu_2 {
 	float: left;
 	width: 100%;
-	background: #8A0886;
+	background: #333;
 }
 
 #menu_2 {
 	background: #333;
+	display: none;
 }
 
 #menu ul, #menu ul li, #menu_2 ul, #menu_2 ul li {
 	float: left !important;
 	margin: 0 !important;
 	padding: 0 !important;
+	font-size: 11pt !important;
+	line-height: 1.4em !important;
 }
 
 #menu ul li, #menu ul li a, #menu_2 ul li, #menu_2 ul li a {
@@ -813,7 +852,7 @@ nav a:first-of-type {
 
 #menu ul li:hover, #menu ul li a:hover, #menu_2 ul li:hover, #menu_2 ul li a:hover {
 	color: #333 !important;
-	background: #ddd !important;
+	background: #fff !important;
 }
 
 #post_directory_entry {
@@ -834,7 +873,7 @@ nav a:first-of-type {
 .blog_entry_text {
 	float: left;
 	margin-left: 15px;
-	width: 290px;
+	width: 420px;
 }
 
 .all_posts_text {
@@ -848,26 +887,30 @@ nav a:first-of-type {
 
 #home_main_sidebar {
 	float: left;
-	border-bottom: 1px solid #ddd;
-	padding: 20px 0;
+	margin-bottom: 20px;
 }
 
 #home_main {
 	float: left;
-	width: 515px;
-	padding: 0 35px 0 0;
+	width: 650px;
+	padding: 25px 30px 20px 30px;
+	background: #fff;
+	margin-bottom: 30px;
 }
 
 #home_sidebar {
-	float: right;
-	width: 200px;
+	float: left;
+	width: 190px;
+	margin-left: 20px;
+	padding: 25px 20px 20px 0px;
 }
 
 #home_main #cta.home {
-	margin: 20px 0 0;
-	padding: 5px 10px;
-	width: 495px;
+	margin: 35px 0 10px;
+	padding: 10px 10px;
+	width: 630px !important;
 	text-align: center;
+	background-image: url('/assets/images/header_background.png');
 }
 
 #home_sidebar .year_label {
@@ -878,7 +921,8 @@ nav a:first-of-type {
 
 #tags {
 	float: left;
-	padding: 0 0 10px 0;
+	padding: 0 0 15px 0;
+	font-size: 11pt;
 }
 
 .tag {
@@ -914,16 +958,47 @@ a.tag:hover {
 }
 
 #menu ul, #menu_2 ul {
-	width: 100%;
+	width: 90%;
+	margin-left: 25px !important;
+	border-left: 1px solid #fff;
+}
+
+.archive {
+	background: #fff;
+	padding: 20px 25px !important;
+	width: 900px !important;
+}
+
+.archive .all_posts_text {
+	width: 635px !important;
+}
+
+.archive .all_posts_text p {
+	font-family: Helvetica, sans-serif !important;
+	font-size: 13pt !important;
+	line-height: 1.5em !important;
+}
+
+.cat_tag_page h2 {
+	font-size: 14pt !important;
 }
 
 @media screen and (max-width: 779px) {
     #header_right, #menu_2, #header h3 {
         display: none !important;
     }
+
+    .site_logo {
+    	padding-left: 0px !important;
+    	margin-top: 5px !important;
+    }
 	
 	#header {
 		padding-top: 10px;
+	}
+
+	#header h2 {
+		font-size: 20pt !important;
 	}
 	
 	#header, #menu {
@@ -932,6 +1007,14 @@ a.tag:hover {
 
 	#menu {
 		background:  #333 !important;
+	}
+
+	#menu ul {
+		margin-left: 0 !important;
+	}
+
+	.tag {
+		margin-bottom: 5px !important;
 	}
 	
 	#social {
@@ -967,7 +1050,6 @@ a.tag:hover {
 	#home_posts_list .blog_entry_title {
 		margin-bottom: 5px;
 	}
-
 	
 	#header h2 {
 		margin-top: 11px;
@@ -985,6 +1067,22 @@ a.tag:hover {
 	.home-link {
 		margin-top: 5px;
 	}
+
+	#home_main #cta.home {
+		width: 95% !important;
+		margin-bottom: 0 !important;
+	}
+
+	#home_sidebar {
+		margin-left: 0px !important;
+		padding-left: 5px !important;
+	}
+
+	#home_posts_list.home_bottom {
+		width: 340px !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 	
 	#home_sidebar, #home_posts_list {
 		display: flex;
@@ -995,5 +1093,21 @@ a.tag:hover {
 		float: left;
 		width: 160px;
 		margin-right: 10px;
+	}
+
+	#home_posts_list.archive {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		width: 350px !important;
+	}
+
+	#home_posts_list.archive .blog_entry_text{
+		width: 160px !important;
+	}
+
+	#footer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		width: 350px !important;
 	}
 }
