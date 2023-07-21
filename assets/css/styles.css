@@ -50,7 +50,7 @@ body {
 }
 
 #header_left {
-	width: 730px;
+	width: 650px;
 	padding-left: 15px;
 }
 
@@ -162,7 +162,7 @@ body {
 	border-right: none;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 979px) {
 
 	body {
 		background: #fff !important;
@@ -983,7 +983,13 @@ a.tag:hover {
 	font-size: 14pt !important;
 }
 
-@media screen and (max-width: 779px) {
+img.game_list {
+	width: 75px !important;
+	margin-top: -15px !important;
+	margin-right: 25px !important;
+}
+
+@media screen and (max-width: 979px) {
     #header_right, #menu_2, #header h3 {
         display: none !important;
     }
