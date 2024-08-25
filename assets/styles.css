@@ -1,0 +1,674 @@
+/* General */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	background: #141d26;
+	background-image: url("images/bg_tile.png"), linear-gradient(to bottom,#8A0886 0px,#8A0886 100px,#141d25 300px);
+	background-repeat: repeat, no-repeat;
+	color: #ddd;
+	font-family: Poppins, sans-serif;
+	line-height: 1.5em;
+}
+
+/* Main layout */
+
+#header-container {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	background: #8A0886;
+	z-index: 999;
+}
+
+#main-container {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 115px;
+}
+
+#header, #menu, #footer {
+	float: left;
+	padding: 20px;
+	border-bottom: 2px solid #141d25;
+	width: 960px;
+}
+
+#header {
+	float: none;
+	margin: 32px auto -40px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+
+#header_right {
+	float: right;
+	margin-top: -20px;
+}
+
+#menu-container {
+	position: fixed;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	margin: 80px 0 15px 0;
+	width: 100%;
+	z-index: -999;
+	background:#141d25;
+}
+
+#main-wrapper {
+	float: left;
+	width: 100%;
+	border-bottom: 2px solid #8A0886;
+}
+
+#main, #sidebar {
+	float: left;
+	padding: 20px;
+}
+
+#main {
+	width: 650px;
+	padding-right: 30px;
+}
+
+#sidebar {
+	width: 260px;
+}
+
+#footer {
+	border-bottom: none;
+	margin-bottom: 30px;
+}
+
+/* Design features */
+
+.header_logo {
+	position: relative;
+	float: left;
+	width: 95px;
+	margin-top: -15px;
+	z-index: 998;
+}
+
+.header_title {
+	float: left;
+	display: block;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-size: 32pt;
+	margin-top: -2px;
+	padding: 0 0 0 15px;
+}
+
+#menu-container ul {
+	position: relative;
+	z-index: 999;
+	width: 850px;
+	margin: 0 auto;
+	padding: 0 20px 0 130px;
+}
+
+#menu-container ul li {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0 15px 0 0;
+}
+
+#menu-container a {
+	color: #ddd;
+}
+
+#menu-container a:hover {
+	color: #FFD900;
+}
+
+.home_post {
+	float: left;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.home_post:last-of-type {
+	border-bottom: none;
+}
+
+.home_post:hover {
+	opacity: 0.8;
+}
+
+.home_post.mini {
+	border-radius: 10px;
+	padding: 10px 20px 0;
+	width: 610px !important;
+	background: rgb(255, 255, 255, 0.6) !important;
+	margin: 0 0 20px;
+}
+
+.home_post.mini:hover {
+	opacity: 1 !important;
+}
+
+.home_post img {
+	float: left;
+	width: 225px !important;
+	margin-right: 20px;
+	border: 2px solid #141d25 !important;
+}
+
+.home_post.mini img {
+	display: none !important;
+}
+
+.home_post h2 {
+	width: 400px;
+	float: left;
+	margin: 0;
+	padding: 0 0 8px;
+	font-size: 15pt;
+	color: #fff !important;
+}
+
+.home_post.mini h2 {
+	display: none !important;
+}
+
+.home_post p {
+	float: left;
+	width: 400px;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	color: #ddd !important;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+    mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+    z-index: -999;
+}
+
+.home_post.mini p {
+	color: #333 !important;
+	width: 100% !important;
+	height: auto !important;
+	padding: 0 0 20px 0 !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    z-index: 0 !important;
+}
+
+.home_post.mini p:last-of-type {
+	padding-bottom: 10px !Important;
+}
+
+.home_post.mini a {
+	color: #8A0886 !important;
+}
+
+.home_rule {
+	float: left;
+	width: 100%;
+	border-bottom: 2px solid #666;
+	margin-bottom: 20px;	
+}
+
+.home_rule:last-of-type {
+	border-bottom: none;
+}
+
+#prev_next {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	border-top: 2px solid #666;
+	padding-top: 20px;
+}
+
+.prev {
+	float: left;
+	text-align: left;
+	width: 45%;
+}
+
+.next {
+	float: right;
+	text-align: right;
+	width: 45%;
+}
+
+.pagination {
+	float: left;
+	width: 100%;
+}
+
+.page_number {
+	float: left;
+	text-align: center;
+	width: 40%;
+}
+
+div.page_previous, div.page_next {
+	float: left;
+	width: 30%;
+	height: 24px;
+}
+
+div.page_next {
+	text-align: right;
+}
+
+#tags {
+	float: left;
+	width: 100%;
+	padding: 20px 0 10px;
+}
+
+.tag_label {
+	float: left;
+	padding: 7px 10px 7px 0;
+	font-weight: bold;
+}
+
+a.tag {
+	float: left;
+	padding: 5px 10px;
+	border: 2px solid #ffd900;
+	margin-right: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+    text-transform: capitalize;
+}
+
+a.tag:hover {
+	opacity: 0.8;
+}
+
+.sidebar_title {
+	float: left;
+	width: 100%;
+	background: #141d25;
+	color: #ddd;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sidebar_ad {
+	display: none;
+	float: left;
+	padding: 0 30px 40px;
+}
+
+.sidebar_post {
+	float: left;
+	height: 61px;
+	padding: 0 0 20px;
+}
+
+.sidebar_post:hover {
+	opacity: 0.8;
+}
+
+/* General fonts and spacing */
+
+h1 {
+	float: left;
+	width: 100%;
+	color: #eee;
+	margin: 0;
+	padding: 0 0 10px;
+	line-height: 1.15em;
+}
+
+h3 {
+	float: left;
+	color: #eee;
+	width: 100%;
+	margin: 0;
+	padding: 20px 0 20px 0;
+	line-height: 1.15em;
+}
+
+.main_meta {
+	float: left;
+	width: 100%;
+	padding: 0 0 25px;
+	text-transform: uppercase;
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #bbb;
+}
+
+.main_meta a {
+	color: #bbb !important;
+	text-decoration: none !important;
+}
+
+.main_meta a:hover {
+	opacity: 0.8;
+}
+
+p {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+#main a {
+	color: #FFD900;
+}
+
+figure {
+	float: left;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+#main img {
+	width: 650px;
+	border-radius: 10px;
+	border: 2px solid #8A0886;
+}
+
+#main ul, #main ol {
+	float: left;
+	margin: 0 0 20px;
+}
+
+#main ul li, #main ol li {
+	float: left;
+	width: 98%;
+	margin-bottom: 10px;
+}
+
+ul li:last-child, ol li:last-child {
+    margin-bottom: 0 !important;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 10pt;
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+blockquote {
+	float: left;
+	border-left: 5px solid #FFD900;
+	margin: 10px 0 30px 0;
+	padding: 0 0 0 20px;
+	font-family: "Roboto Mono", "Courier New", sans-serif;
+}
+
+blockquote p {
+	padding: 0;
+}
+
+::selection {
+	background: #FFD900;
+	color: #333;
+}
+
+#main table {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#main th {
+	padding: 5px;
+	background: #8A0886;
+	color: white;
+}
+
+#main tr:nth-child(even) {
+	background: #666
+}
+
+#main tr:nth-child(odd) {
+	background: #444;
+}
+
+#main table tr:first-of-type {
+	border-bottom: 5px solid #666;
+}
+
+#main td {
+	padding: 5px;
+}
+
+/* Special fonts and spacing */
+
+#header_right img {
+	float: right;
+	width: 30px;
+	margin-top: 15px;
+	padding-left: 5px;
+}
+
+.game_list {
+	float: right;
+	height: 70px !important;
+	width: 70px !important;
+	margin-top: -8px !important;
+	padding-right: 45px;
+	padding-left: 27px !important;
+}
+
+#header_right img:hover, .game_list:hover {
+	opacity: 0.8;
+}
+
+.sidebar_post img {
+	float: left;
+	height: 61px;
+	border-radius: 5px;
+	border: 1px solid #8A0886;
+}
+
+.sidebar_post_title {
+	float: left !important;
+	width: 130px;
+	height: 61px;
+	padding: 0 0 0 15px;
+	font-size: 10pt;
+	line-height: 1.15em;
+	margin: 0;
+}
+
+a .sidebar_post_title {
+	color: #ddd !important;
+}
+
+#cta_socials {
+	margin-top: 5px;
+	margin-left: 23px;
+	float: left;
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+h3.cta_header {
+	border-top: 2px solid #666;
+	font-size: 14pt !important;
+	padding-bottom: 10px;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+
+.directory h3 {
+	padding-top: 0 !important;
+}
+
+#cta_socials a {
+	color: #fff;
+}
+
+.cta_social {
+	float: left;
+	width: 30%;
+	justify-content: center;
+	margin-right: 10px;
+	background-image: url('/assets/images/header_background.png');
+	background-position: center top;
+	border-radius: 5px;
+}
+
+.cta_social:hover {
+	opacity: 0.8;
+}
+
+.cta_social img {
+	width: 35px !important;
+	height: 35px !important;
+	margin: 10px auto 0px;
+	display: block;
+	border: none !important;
+}
+
+.cta_img {
+	float: left;
+	display: flex;
+	width: 100%;
+	border: none !important;
+}
+
+.cta_text {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 2px 0 10px;
+}
+
+#main.game-list {
+	width: 960px !important;
+}
+
+#main.game-list a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+#main.game-list tr:hover {
+	opacity: 0.8;
+}
+
+/* Mobile styling */
+
+@media screen and (max-width: 979px) {
+
+	#sidebar, #header_right, .game_list, #menu-container ul {
+		display: none;
+	}
+
+	#header-container, #menu-container, #main-container {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#header-container {
+		position: static;
+		float: left;
+		background: none;
+		height: 75px;
+	}
+
+	#header {
+		margin: 12px auto -40px;
+		position: static;
+		float: left;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#menu-container {
+		position: static;
+		height: 35px;
+		margin-top: 30px;
+		width: 85%;
+		margin-left: 5%;
+	}
+
+	#header, #main, #main.game-list, #main-wrapper, #footer {
+		width: 100% !important;
+	}
+
+	#main img {
+		width: 98%;
+	}
+
+	#main, #footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.header_logo {
+		width: 70px;
+		margin: 0;
+		padding: 3px 0 0 0;
+	}
+
+	.header_title {
+		width: 300px;
+		margin: 25px 0 0 0;
+		padding: 0 0 0 15px;
+		font-size: 20pt;
+	}
+
+	#main-container {
+		padding-top: 20px;
+	}
+
+	#cta_socials {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.home_post, .home_post p, .home_post img, .home_post.mini, .home_post.mini p {
+		width: 100% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.home_post.mini, .home_post h2, .home_post p {
+		width: 90% !important;
+		padding-left: 5% !important;
+		padding-right: 5% !important;
+	}
+
+	.home_post h2, .home_post p {
+		width: 94% !important;
+		padding-left: 3% !important;
+		padding-right: 3% !important;
+	}		
+
+	.home_post.mini {
+		margin-bottom: 20px !important;
+	}
+
+	.home_post img {
+		margin-bottom: 10px;
+	}
+
+	.directory h3 {
+		width: 94% !important;
+		padding-left: 3% !important;
+		padding-right: 3% !important;
+		padding-bottom: 10px;
+	}
+
+}
