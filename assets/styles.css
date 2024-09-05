@@ -565,6 +565,17 @@ h3.cta_header {
 	opacity: 0.8;
 }
 
+img.banner_ad {
+	float: left;
+	width: 80% !important;
+	border: none !important;
+	margin: 10px 10% 20px !important;
+}
+
+img.mobile_ad {
+	display: none !important;
+}
+
 /* Mobile styling */
 
 @media screen and (max-width: 979px) {
@@ -668,6 +679,28 @@ h3.cta_header {
 		padding-left: 3% !important;
 		padding-right: 3% !important;
 		padding-bottom: 10px;
+	}
+
+	img.mobile_ad {
+		display: block !important;
+		float: left;
+		width: 80% !important;
+		border: none !important;
+		margin: 0px 10% 30px !important;
+	}
+
+}
+
+/* Banner ad resize on very narrow screens */
+@media screen and (max-width: 650px) {
+
+	img.banner_ad, img.mobile_ad {
+		width: 100% !important;
+		margin: 10px 0 20px 0 !important;
+	}
+
+	img.mobile_ad {
+		margin-top: 5px !important;
 	}
 
 }
