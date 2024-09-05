@@ -576,6 +576,10 @@ img.mobile_ad {
 	display: none !important;
 }
 
+img.banner_ad a, img.mobile_a a {
+	border: none !important;
+}
+
 /* Mobile styling */
 
 @media screen and (max-width: 979px) {
@@ -681,6 +685,10 @@ img.mobile_ad {
 		padding-bottom: 10px;
 	}
 
+	img.banner_ad {
+		display: none !important;
+	}
+
 	img.mobile_ad {
 		display: block !important;
 		float: left;
@@ -694,13 +702,13 @@ img.mobile_ad {
 /* Banner ad resize on very narrow screens */
 @media screen and (max-width: 650px) {
 
-	img.banner_ad, img.mobile_ad {
-		width: 100% !important;
-		margin: 10px 0 20px 0 !important;
+	img.banner_ad {
+		display: none !important;
 	}
 
 	img.mobile_ad {
-		margin-top: 5px !important;
+		width: 100% !important;
+		margin: 10px 0 20px 0 !important;
 	}
 
 }
