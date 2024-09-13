@@ -580,6 +580,16 @@ img.banner_ad a, img.mobile_a a {
 	border: none !important;
 }
 
+hr {
+	float: left;
+	width: 100%;
+	height: 2px;
+	background: #666;
+	border: none;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
 /* Mobile styling */
 
 @media screen and (max-width: 979px) {
